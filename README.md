@@ -1,5 +1,7 @@
 # roguelike-radio-podcast-downloader
 
+It only download the numbered roguelike podcast.  This doesn't download the special roguelike podcast.  
+
 For windows you need to get wget from https://eternallybored.org/misc/wget/
 If you get the win64 version.  Rename it to wget.exe and add it to your path.
 You need to also enable powershell script execution.
