@@ -1,5 +1,6 @@
 # roguelike-radio-podcast-downloader
 
+Check http://www.roguelikeradio.com/ for what episodes are currently available.
 It only download the numbered roguelike podcast.  This doesn't download the special roguelike podcast.  
 
 For windows you need to get wget from https://eternallybored.org/misc/wget/
@@ -9,4 +10,4 @@ You need to also enable powershell script execution.
 For linux you need to install wget.
 
 To use if you want to download specific podcast.  Like only the first episode on linux then type ./downloader.bash 1 1  For episode
-1 to 138 ./downloader.bash 1 138
+1 to 139 ./downloader.bash 1 139
