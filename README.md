@@ -14,6 +14,5 @@ To use if you want to download specific podcast.  Like only the first episode on
 
 To use player.bash you need mpv. <br />
 chmod +x ./player.bash <br />
-Example: <br />
-To play all the files without entering a stop amount. <br />
+Example to play all the files without entering a stop amount. <br />
 ./player.bash 1 -1 <br />
