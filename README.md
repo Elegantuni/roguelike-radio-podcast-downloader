@@ -4,7 +4,7 @@ Check http://www.roguelikeradio.com/ for what episodes are currently available.
 It only download the numbered roguelike podcast.  This doesn't download the special roguelike podcast.  
 
 For windows you need to get wget from https://eternallybored.org/misc/wget/
-If you get the win64 version.  Rename it to wget.exe and add it to your path.
+If you get the win64 zip version.  Rename it to wget.exe and add it to your path.
 You need to also enable powershell script execution.
 
 For linux you need to install wget.
