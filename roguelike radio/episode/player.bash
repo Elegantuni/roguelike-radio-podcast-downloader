@@ -71,7 +71,7 @@ then
 	while [ $start -le $finish ]
 	do
 		cd $start
-		mpv roguelikeradio`echo $start`.mp3 --start $position
+		mpv roguelikeradio`echo $start`.mp3
 		cd ..
 		let start=$start+1
 	done
