@@ -15,10 +15,15 @@ To use if you want to download specific podcast.  Like only the first episode on
 To use player.bash you need mpv. For windows you can get it from https://mpv.srsfckn.biz/ put it in your path.<br />
 On linux execute: $ chmod +x ./player.bash <br />
 Example to play all the files without entering a stop amount: <br />
-Linux <br >
+Linux <br />
 $ ./player.bash 1 -1 <br />
+or <br />
+Linux <br />
+$ ./player.bash <br />
 Windows <br >
 PS> .\player.ps1 1 -1 <br />
+or <br />
+PS> .\player.ps1 <br />
 <br />
 Example to play all the files starting from 50 without entering a stop amount: <br />
 Linux <br />
