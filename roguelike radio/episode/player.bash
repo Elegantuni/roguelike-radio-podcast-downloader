@@ -23,11 +23,14 @@ then
 	position=$3
 fi
 
-if [ $numargs -lt 2 ] || [ $numargs -gt 3 ];
+if [ $numargs -ne 0 ];
 then
-	echo "player.bash <start number> <finish number (-1 for infinite)>"
+	if [ $numargs -lt 2 ] || [ $numargs -gt 3 ];
+	then
+		echo "player.bash <start number> <finish number (-1 	for infinite)>"
 
 	exit 1
+	fi
 fi
 
 if [ $finish -eq -1 ];
