@@ -19,13 +19,13 @@ If ($($args.Count) -eq 3)
 	$position=$args[2]
 }
 
-If ($($args.Count) -eq !(0))
+If ($($args.Count) -ne 0)
 {
 	If (($($args.Count) -lt 2) -or ($($args.Count) -gt 3))
 	{
 		echo "player.ps1 <start number> <finish number (-1 for infinite)>"
 
-		return 1
+		return
 	}
 }
 
@@ -36,7 +36,7 @@ If ($finish -eq -1)
 	$determinetocontinue=$LastExitCode
 	If ($determinetocontinue -ne 0)
 	{
-		return 1
+		return
 	}
 	$start++
 	cd ..
@@ -48,13 +48,13 @@ If ($finish -eq -1)
 		$determinetocontinue=$LastExitCode
 		If ($determinetocontinue -ne 0)
 		{
-			return 1
+			return 
 		}
 		$start++
 		cd ..
 	}
 
-	return 0
+	return 
 }
 
 If ($finish -ne -1)
