@@ -12,7 +12,7 @@ For linux you need to install wget.
 To use if you want to download specific podcast.  Like only the first episode on linux then type ./downloader.bash 1 1  For episode
 1 to 139 ./downloader.bash 1 139 For only the 139 episode then type ./downloader.bash 139 139
 
-To use player.bash you need mpv. <br />
+To use player.bash you need mpv. For windows you can get it from https://mpv.srsfckn.biz/ put it in your path.<br />
 chmod +x ./player.bash <br />
 Example to play all the files without entering a stop amount: <br />
 ./player.bash 1 -1 <br />
