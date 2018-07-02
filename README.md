@@ -16,3 +16,6 @@ To use player.bash you need mpv. <br />
 chmod +x ./player.bash <br />
 Example to play all the files without entering a stop amount: <br />
 ./player.bash 1 -1 <br />
+<br />
+Example to play all the files from 50 without entering a stop amount: <br />
+./player.bash 50 -1 <br />
