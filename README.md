@@ -12,8 +12,8 @@ For linux you need to install wget.
 To use if you want to download specific podcast.  Like only the first episode on linux then type ./downloader.bash 1 1  For episode
 1 to 139 ./downloader.bash 1 139 For only the 139 episode then type ./downloader.bash 139 139
 
-To use player.bash you need mpv.
-chmod +x ./player.bash
-Example:
-To play all the files without entering a stop amount.
-./player.bash 1 -1
+To use player.bash you need mpv. <br />
+chmod +x ./player.bash <br />
+Example: <br />
+To play all the files without entering a stop amount. <br />
+./player.bash 1 -1 <br />
