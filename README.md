@@ -19,3 +19,9 @@ Example to play all the files without entering a stop amount: <br />
 <br />
 Example to play all the files starting from 50 without entering a stop amount: <br />
 ./player.bash 50 -1 <br />
+<br />
+Example to play all the files without entering a stop amount and start the first at 30 minutes and 10 seconds in to the first: <br />
+./player.bash 1 -1 00:30:10 <br />
+<br />
+Example to play all the files starting from 50 and ending at 70 and start the 50 at 1 hour 30 minutes and 10 seconds: <br />
+./player.bash 50 70 01:30:10 <br />
