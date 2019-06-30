@@ -15,6 +15,9 @@ To use if you want to download specific podcast.  Like only the first episode on
 To download all the episodes including special episode (Ex: 1 to 153 and special episodes) <br />
 ./downloader.bash --all 153 <br />
 <br />
+To download only the special episodes <br />
+./downloader.bash --extra <br />
+<br />
 To use player.bash you need mpv. For windows you can get it from https://mpv.srsfckn.biz/ put it in your path.<br />
 On linux execute: $ chmod +x ./player.bash <br />
 Example to play all the files without entering a stop amount: <br />
