@@ -36,7 +36,7 @@ fi
 if [ $finish -eq -1 ];
 then
 	cd $start
-	mpv roguelikeradio`echo $start`.mp3 --start $position
+	mpv roguelikeradio`echo $start`.mp3 --start=$position
 	determinetocontinue=$?
 	if [ $determinetocontinue -ne 0 ];
 	then
@@ -64,7 +64,7 @@ fi
 if [ $finish -ne -1 ];
 then
 	cd $start
-	mpv roguelikeradio`echo $start`.mp3 --start $position
+	mpv roguelikeradio`echo $start`.mp3 --start=$position
 	cd ..
 	let start=$start+1
 
