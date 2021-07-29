@@ -32,7 +32,7 @@ If ($($args.Count) -ne 0)
 If ($finish -eq -1)
 {
 	cd $start
-	mpv roguelikeradio$start.mp3 --start $position
+	mpv roguelikeradio$start.mp3 --start=$position
 	$determinetocontinue=$LastExitCode
 	If ($determinetocontinue -ne 0)
 	{
@@ -60,7 +60,7 @@ If ($finish -eq -1)
 If ($finish -ne -1)
 {
 	cd $start
-	mpv roguelikeradio$start.mp3 --start $position
+	mpv roguelikeradio$start.mp3 --start=$position
 	cd ..
 	$start++
 
