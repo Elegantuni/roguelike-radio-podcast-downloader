@@ -19,16 +19,6 @@ If ($($args.Count) -eq 3)
 	$position=$args[2]
 }
 
-If ($($args.Count) -ne 0)
-{
-	If (($($args.Count) -lt 2) -or ($($args.Count) -gt 3))
-	{
-		echo "player.ps1 <start number> <finish number (-1 for infinite)>"
-
-		return
-	}
-}
-
 If ($finish -eq -1)
 {
 	cd $start
@@ -57,6 +47,22 @@ If ($finish -eq -1)
 	return 
 }
 
+If ($($args.Count) -eq 3)
+{
+	cd $start
+	mpv roguelikeradio$start.mp3 --start=$position
+	cd ..
+	$start++
+
+	While ($start -le $finish)
+	{
+		cd $start
+		mpv roguelikeradio$start.mp3
+		cd ..
+		$start++
+	}
+}
+
 If ($finish -ne -1)
 {
 	cd $start
@@ -72,3 +78,14 @@ If ($finish -ne -1)
 		$start++
 	}
 }
+
+If ($($args.Count) -ne 0)
+{
+	If (($($args.Count) -lt 2) -or ($($args.Count) -gt 3))
+	{
+		echo "player.ps1 <start number> <finish number (-1 for infinite)>"
+
+		return
+	}
+}
+
