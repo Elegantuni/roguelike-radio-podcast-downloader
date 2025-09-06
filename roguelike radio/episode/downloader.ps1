@@ -1,4 +1,4 @@
-If (($($args.Count) -eq 2) -and ($args[0] -like "--all"))
+If (($($args.Count) -eq 2) -and ($args[0] -eq "--all"))
 {
 	$urlnumber = 1
 	$urlnumber2 = $args[1]
@@ -49,7 +49,7 @@ If (($($args.Count) -eq 2) -and ($args[0] -like "--all"))
 
 }
 
-If (($($args.Count) -eq 1) -and $(args[0] -like "--extra"))
+If (($($args.Count) -eq 1) -and $(args[0] -eq "--extra"))
 {
 	mkdir 6b_interview_Ido_Yehieli
         cd 6b_interview_Ido_Yehieli
@@ -104,3 +104,4 @@ While ($urlnumber -le $urlnumber2)
 	$urlnumber++
 	Start-Sleep 5
 }
+
